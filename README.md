@@ -2,6 +2,8 @@
 
 *A simple command-line utility for recording and processing client questions using local LLMs*
 
+<video src="https://github.com/alneremin/ai_questioner/raw/refs/heads/main/media/test.mp4" width="600" controls></video>
+
 ---
 
 ## Prerequisites
