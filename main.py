@@ -27,7 +27,8 @@ def main(argv):
     rag_conf = config['llm']
     rag = OllamaRAG()
     rag.load_docs(rag_conf['path_to_docs'], rag_conf['docs_extension'])
-    print(f"Documents (N={rag.get_documents_count()}) are loaded.")
+    print(f"Documents (N={rag.get_documents_count()}) are loaded from path" \
+          f"'{rag_conf['path_to_docs']}' with extension '{rag_conf['docs_extension']}'.")
     rag.split(rag_conf['shunk_size'], rag_conf['shunk_overlap'])
     print(f"Documents are splitted into chunks with size equal to {rag_conf['shunk_size']}")
 
@@ -43,7 +44,7 @@ def main(argv):
     rag.create_rag_chain()
     print("RAG chain is created, ready to answer!")
 
-    current_row_index = 1
+    current_row_index = 2
     while True:
         question = input("Ask a question [and press Enter]:")
         print(f"Your question: {question}")
