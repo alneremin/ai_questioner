@@ -1,0 +1,10 @@
+Odometry methods estimate a robot's position change (pose) over time by integrating data from sensors. The primary types are wheel encoders (counting wheel rotations), dead reckoning with dedicated wheels, and visual/optical odometry (using cameras or sensors to track movement against the ground). These methods are often combined to reduce cumulative errors (drift)
+
+Key Odometry Methods:
+Wheel Encoder Odometry: Measures the rotation of drive wheels to estimate distance and direction.
+Dead Wheel (Odometry Pods): Uses non-driven, freely spinning wheels equipped with encoders to measure distance independently of wheel slip.
+Visual Odometry (VO): Uses cameras to track feature points (e.g., corners) across sequential image frames to determine motion.
+Feature-based VO: Detects and tracks specific features (e.g., SURF, SIFT) across frames.
+Direct/Appearance-based VO: Uses the intensity information of all pixels for tracking.
+Optical Odometry (Sensor): Utilizes optical flow sensors (similar to a computer mouse) to track surface features for high-precision, slip-resistant tracking.
+Inertial Odometry (INS): Uses inertial sensors (accelerometers and gyroscopes) to calculate position relative to a starting point

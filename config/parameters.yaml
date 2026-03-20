@@ -1,0 +1,19 @@
+
+google_sheet_service:
+  service_name: sheets
+  service_version: v4
+  spreadsheet_id: YOUR_SPREADSHEET_ID_HERE
+  scopes:
+    - https://www.googleapis.com/auth/spreadsheets
+  sheet: YOUR_SHEET_NAME
+  path_to_creds: ./path/to/credentials.json
+
+llm:
+  path_to_docs: ./docs
+  docs_extension: txt
+  chunk_size: 500
+  chunk_overlap: 0
+  path_to_vector_db: ./chroma_db
+  embeddings_model: mxbai-embed-large
+  llm: llama3
+  system_prompt_path: ./config/prompt.txt

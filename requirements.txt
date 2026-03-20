@@ -1,0 +1,14 @@
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+oauth2client
+
+PyYAML
+langchain
+langchain-community
+langchain-chroma
+langchain-text-splitters
+pysqlite3
+pysqlite3-binary
+
+pyOpenSSL==24.0.0
